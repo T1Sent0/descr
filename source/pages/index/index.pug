@@ -1,0 +1,198 @@
+extends ../../components/head/head
+
+block title
+    | index
+
+block main
+    include ../../components/menu/menu
+    div#fullpage
+        include ../../components/header/header
+        include ../../components/template_block_page/template_block_page
+        block content
+            div.section.service(data-anchor='service')
+            div.section.portfolio(data-anchor='portfolio')
+            div.section.about-us(data-anchor='about-us')
+            div.section.contact(data-anchor='contact')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //div.main#full-page
+    //    include ../../components/header/header
+    //    include ../../components/template_block_page/template_block_page
+    //    block content
+    //        div.content.service.position.slide
+    //            block title-block
+    //                h1 Услуги
+    //            block slider
+    //                div.container
+    //                    div.slider.swiper-container.service-slider
+    //                        div.swiper-wrapper
+    //                            div.swiper-slide
+    //                                a(href="#") Разработка
+    //                                div.content-slide
+    //                                    div.description-slide
+    //                                        span Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam, consequuntur dicta dolores eveniet impedit ipsa ipsam ipsum laborum magni maiores natus nisi quaerat quisquam quod sit soluta temporibus tenetur.
+    //                                        a.links-service Подробнее
+    //                                    img.img-razrabotka(src=require('./img/slide-razrabotka.jpg'))
+    //                            div.swiper-slide
+    //                                a(href="#") Дизайн
+    //                                div.content-slide
+    //                                    div.description-slide
+    //                                        span Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam, consequuntur dicta dolores eveniet impedit ipsa ipsam ipsum laborum magni maiores natus nisi quaerat quisquam quod sit soluta temporibus tenetur.
+    //                                        a.links-service Подробнее
+    //                                    img.img-design(src=require('./img/design-image2.jpg'   ))
+    //                            div.swiper-slide
+    //                                a(href="#") SEO
+    //                                div.content-slide
+    //                                    div.description-slide
+    //                                        span Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam, consequuntur dicta dolores eveniet impedit ipsa ipsam ipsum laborum magni maiores natus nisi quaerat quisquam quod sit soluta temporibus tenetur.
+    //                                        a.links-service Подробнее
+    //                                    img.img-design(src=require('./img/SEO.png'))
+    //                        div.swiper-pagination
+    //    block content
+    //        div.content.portfolio.position.slide
+    //            block title-block
+    //                h1 Портфолио
+    //            block slider
+    //                div.slider.swiper-container.portfolio-slider
+    //                    div.swiper-wrapper
+    //                        div.swiper-slide
+    //                            div.container-image-portfolio
+    //                                div.portfolio-img
+    //                                    a(href="#")
+    //                                    img(src=require('./img/test/q.png'))
+    //                                    div.about-project
+    //                                        h2 Проект 1
+    //                                        span Такой-то такой-то
+    //                                div.portfolio-img
+    //                                    a(href="#")
+    //                                    img(src=require('./img/test/mac.jpg'))
+    //                                    div.about-project
+    //                                        h2 Проект 2
+    //                                        span Такой-то такой-то
+    //                                div.portfolio-img
+    //                                    a(href="#")
+    //                                    img(src=require('./img/test/q.png'))
+    //                                    div.about-project
+    //                                        h2 Проект 3
+    //                                        span Такой-то такой-то
+    //                                div.portfolio-img
+    //                                    a(href="#")
+    //                                    img(src=require('./img/test/q.png'))
+    //                                    div.about-project
+    //                                        h2 Проект 4
+    //                                        span Такой-то такой-то
+    //                        div.swiper-slide
+    //                            div.container-image-portfolio
+    //                                div.portfolio-img
+    //                                    a(href="#")
+    //                                    img(src=require('./img/test/q.png'))
+    //                                    div.about-project
+    //                                        h2 Проект 1
+    //                                        span Такой-то такой-то
+    //                                div.portfolio-img
+    //                                    a(href="#")
+    //                                    img(src=require('./img/test/mac.jpg'))
+    //                                    div.about-project
+    //                                        h2 Проект 2
+    //                                        span Такой-то такой-то
+    //                                div.portfolio-img
+    //                                    a(href="#")
+    //                                    img(src=require('./img/test/q.png'))
+    //                                    div.about-project
+    //                                        h2 Проект 3
+    //                                        span Такой-то такой-то
+    //                                div.portfolio-img
+    //                                    a(href="#")
+    //                                    img(src=require('./img/test/q.png'))
+    //                                    div.about-project
+    //                                        h2 Проект 4
+    //                                        span Такой-то такой-то
+    //                        div.swiper-slide
+    //                            div.container-image-portfolio
+    //                                div.portfolio-img
+    //                                    a(href="#")
+    //                                    img(src=require('./img/test/q.png'))
+    //                                    div.about-project
+    //                                        h2 Проект 1
+    //                                        span Такой-то такой-то
+    //                                div.portfolio-img
+    //                                    a(href="#")
+    //                                    img(src=require('./img/test/mac.jpg'))
+    //                                    div.about-project
+    //                                        h2 Проект 2
+    //                                        span Такой-то такой-то
+    //                                div.portfolio-img
+    //                                    a(href="#")
+    //                                    img(src=require('./img/test/q.png'))
+    //                                    div.about-project
+    //                                        h2 Проект 3
+    //                                        span Такой-то такой-то
+    //                                div.portfolio-img
+    //                                    a(href="#")
+    //                                    img(src=require('./img/test/q.png'))
+    //                                    div.about-project
+    //                                        h2 Проект 4
+    //                                        span Такой-то такой-то
+    //                    div.swiper-pagination
+    //    block content
+    //        div.content.about-us.position.slide
+    //            block title-block
+    //                h1 О нас
+    //            div
+    //                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid esse expedita fugiat illum ipsa neque possimus provident tempore vero, voluptas. Consequuntur impedit ipsam officia perferendis ullam vel, voluptates. Cupiditate, laudantium?
+    //                img
+    //
+    //    block content
+    //        div.content.contact.position.slide
+    //            block title-block
+    //                h1 Контакты
+    //            img(src=require('./img/contact-vizitka.png'))

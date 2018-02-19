@@ -1,0 +1,43 @@
+.header {
+  //background: url('./img/22.png') #050505 center/cover no-repeat;
+  video {
+    width: 100%;
+  }
+  .opacity {
+    z-index: 1;
+    background: #929292;
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .block-logo {
+    z-index: 1;
+    position: absolute;
+    top: calc(50% - 12em);
+    left: calc(50% - 16.3em);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      margin-bottom: .5em;
+      letter-spacing: .2em;
+      //font-size: 3em;
+      color: #f8f8f8;
+      font-family: Avignon_Modern;
+    }
+    .logo {
+      width: 60%;
+      margin-bottom: 2em;
+    }
+    .dinamic-text-header {
+      color: #f9f9f9;
+      margin-bottom: .5em;
+      font-size: 1.5em;
+      letter-spacing: .15em;
+      font-family: 'New_YorkerC';
+    }
+  }
+}

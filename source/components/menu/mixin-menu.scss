@@ -1,0 +1,23 @@
+@import "../header/colors-header";
+
+@mixin size-menu ($width, $height){
+  width: $width;
+  height: $height;
+}
+
+@mixin border-li ($size, $style, $color, $radius) {
+  border: $size $style $color;
+  border-radius: $radius;
+}
+
+@mixin margin ($size...) {
+  margin: $size;
+}
+
+@mixin padding ($size...) {
+  padding: $size;
+}
+
+@mixin box-shadow ($params...) {
+  box-shadow: $params;
+}

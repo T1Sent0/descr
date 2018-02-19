@@ -1,0 +1,136 @@
+@import "colors-index";
+
+* {
+  font-size: 1vw;
+}
+
+body {
+  background: rgb(238, 238, 238);
+  image-rendering: unset;
+}
+
+.content {
+  font-family: "Bonveno", "Century Gothic", serif;
+  padding: 5% 5% 1%;
+  background: #fcfcfc;
+  h1 {
+    margin-top: 0;
+    padding: 0 2%;
+    cursor: default;
+    color: $color-h1;
+  }
+
+  .service-slider {
+    background: #fff;
+    box-shadow: 0 0 1em #a2a2a2;
+  }
+  .slider {
+    .swiper-pagination {
+      .swiper-pagination-bullet {
+        width: 1em;
+        height: 1em;
+      }
+      .swiper-pagination-bullet-active {
+        background: #f0dc62;
+      }
+    }
+
+    .swiper-slide {
+      padding: 5%;
+      box-sizing: border-box;
+      a {
+        text-decoration: none;
+        color: $color-link;
+        -webkit-margin-before: 0.83em;
+        -webkit-margin-after: 0.83em;
+        -webkit-margin-start: 0;
+        -webkit-margin-end: 0;
+        font-weight: bold;
+      }
+      .img-razrabotka, .img-design {
+        width: 60%;
+      }
+      .content-slide {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: .5em;
+        span {
+          display: block;
+          margin-bottom: .5em;
+        }
+        .description-slide {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-right: 1.5em;
+        }
+        .links-service {
+          display: inline-block;
+          background: #5fcdf7;
+          padding: 1em 1.5em;
+          border-radius: 4em;
+          color: white;
+          cursor: pointer;
+          &:hover {
+            background: #56c3e7;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+.portfolio {
+  .portfolio-slider {
+    box-shadow: 0.01em 0.01em 0.04em #000000;
+    .swiper-slide {
+      background: #fff;
+    }
+  }
+  .container-image-portfolio {
+    display: flex;
+    margin-bottom: 2em;
+    justify-content: space-between;
+    .portfolio-img {
+      width: 13em;
+      height: 19em;
+      display: flex;
+      flex-direction: column;
+      a {
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        margin: 0;
+      }
+      img {
+        height: 70%;
+        margin: 0;
+        padding: 0;
+        image-rendering: unset;
+      }
+      .about-project {
+        background: black;
+        width: inherit;
+        height: 30%;
+        box-sizing: border-box;
+        padding: 0 5%;
+        h2, span {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.about-us, .contact {
+  height: 100vh;
+}
+
+.contact {
+  padding-bottom: 5%;
+  img {
+    width: 60%;
+  }
+}

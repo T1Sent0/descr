@@ -1,0 +1,77 @@
+@import "mixin-menu";
+@import "fonts";
+
+.menu {
+  //position: fixed;
+  z-index: 2;
+  cursor: default;
+}
+
+ul {
+  position: fixed;
+  li {
+    @include size-menu(10em, auto);
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+    font-family: "Bonveno", "Century Gothic";
+    @include padding(0);
+    @include margin(0);
+    background-color: $color-background;
+    @include border-li(.03em, solid, $color-border-li, .1em);
+    @include box-shadow(0 .3em 0 $color-box-shadow-li-one inset, 0 .3em .2em $color-box-shadow-li-two);
+  }
+  li.active {
+    @include box-shadow(0 .3em 0 $color-box-shadow-li-hover-a-hover inset);
+    will-change: box-shadow;
+    font-weight: bold;
+    background: $color-background-a-hover;
+    color: $color-a-hover;
+  }
+}
+
+li {
+  a {
+    @include padding(.7em);
+    text-decoration: none;
+    color: $color-a;
+    text-shadow: 0.1em 0.1em $color-text-shadow-a;
+    display: block;
+    &:hover {
+      background: $color-background-a-hover;
+      color: $color-a-hover;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}
+
+.menu li ul {
+  display: none;
+  height: auto;
+  @include margin(0 -.5em 0 0);
+  @include padding(0);
+}
+
+.menu li:hover ul {
+  display: block;
+}
+
+.menu-item ul li a:hover .menu-item li {
+  box-shadow: none;
+}
+
+.menu li:hover li {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu li:hover, a:hover {
+  background: $background-li-hover-a-hover;
+  @include box-shadow(0 .3em 0 $color-box-shadow-li-hover-a-hover inset);
+}
+
+#fp-nav ul li .fp-tooltip.left {
+  left: 40px;
+  color: black;
+}

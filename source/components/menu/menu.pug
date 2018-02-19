@@ -1,0 +1,43 @@
+ul(class = 'menu')#menu
+    each category, index in ['Главная', 'Услуги', 'Портфолио', 'О нас', 'Контакты']
+        if index === 0
+            li.menu-item(data-menuanchor='index')
+                a(href='#index')= category
+        if index === 1
+            li.menu-item(data-menuanchor='service')
+                a(href='#service')= category
+                ul
+                    each subcategory, subindex in ['Разработка', 'Web-дизайн', 'SEO']
+                        if subindex === 0
+                            li
+                                a(href='')= subcategory
+                        if subindex === 1
+                            li
+                                a(href='')= subcategory
+                        if subindex === 2
+                            li
+                                a(href='')= subcategory
+        if index === 2
+            li.menu-item(data-menuanchor='portfolio')
+                a(href='#portfolio')= category
+                //ul
+                //    each subcategory, subindex in ['2017', '2018']
+                //        li
+                //            if subindex === 0
+                //                a(href='')= subcategory
+                //            if subindex === 1
+                //                a(href='')= subcategory
+        if index === 3
+            li.menu-item(data-menuanchor='about-us')
+                a(href='#about-us')= category
+                ul
+                    each subcategory, subindex in ['Методолгия','Отзывы']
+                            if subindex === 0
+                                li
+                                    a(href='./methodology.html')= subcategory
+                            if subindex === 1
+                                li
+                                    a(href='')= subcategory
+        if index === 4
+            li.menu-item(data-menuanchor='contact')
+                a(href='#contact')= category
