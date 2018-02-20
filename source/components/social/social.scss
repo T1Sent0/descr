@@ -1,0 +1,22 @@
+.container-social {
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  bottom: calc(50% - 8.5em);
+  width: 5%;
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 0;
+  }
+  img {
+    width: 50%;
+    &:not(:last-child) {
+      margin-bottom: .5em;
+    }
+    &:nth-child(2) {
+
+    }
+  }
+}

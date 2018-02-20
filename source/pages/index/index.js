@@ -1,6 +1,7 @@
 import 'normalize.css';
 import '../../components/head/head.pug'
 import '../../components/menu/menu.scss'
+import '../../components/social/social.scss'
 import '../../components/header/header.scss'
 import './index.scss'
 
@@ -17,7 +18,7 @@ $(document).ready(function () {
 
     $('#fullpage').fullpage({
         menu: '#menu',
-        anchors:['index', 'service', 'methodology', 'about-us', 'contact'],
+        anchors:['index', 'service', 'portfolio', 'about-us', 'contact'],
         // navigation: true,
         // navigationPosition: 'left',
         // navigationTooltips: ['index', 'service', 'methodology', 'about-us', 'contact'],
@@ -61,7 +62,7 @@ $(document).ready(function () {
         //Design
         controlArrows: true,
         sectionsColor : ['#ccc', '#fff'],
-        // fixedElements: '.menu',
+        // fixedElements: '.container-social',
         responsiveWidth: 0,
         responsiveHeight: 0,
         responsiveSlides: false,
