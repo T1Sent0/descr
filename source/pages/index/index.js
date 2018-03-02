@@ -1,8 +1,10 @@
 import 'normalize.css';
+import '../../components/fonts/_fonts.scss'
 import '../../components/head/head.pug'
+import '../../components/header/header'
 import '../../components/menu/menu.scss'
 import '../../components/social/social.scss'
-import '../../components/header/header.scss'
+
 import './index.scss'
 
 import 'swiper/dist/css/swiper.min.css'
@@ -137,7 +139,8 @@ $(document).ready(function () {
         startDelay: 700,
         backDelay: 1000,
         loop: true,
-        backSpeed: 40
+        backSpeed: 40,
+        showCursor: false
     };
 
     let typed = new Typed(".dinamic-text-header", options);

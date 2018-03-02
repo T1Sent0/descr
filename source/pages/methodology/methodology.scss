@@ -1,1 +1,46 @@
 @import "../index/index";
+
+.header-metodology {
+  background: url("./img/metodologiya.svg") no-repeat 33.45%/cover #56c3e7;
+  background-size: 50%;
+  height: 30em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5em;
+  box-sizing: border-box;
+}
+
+.content-metodology {
+  h1 {
+    text-align: center;
+    font-family: ProximaNova-Black;
+    text-shadow: 0 0 0 #fff;
+    font-size: 4em;
+  }
+}
+
+.content-parelex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .client-image {
+    background: url("./img/client.png") no-repeat center;
+    z-index: 1;
+    width: 10em;
+    height: 10em;
+  }
+  .line-to-bottom {
+    position: relative;
+    top: -2em;
+    left: calc(-.8em);
+    width: .2em;
+    height: 20em;
+    background: #56c3e7;
+  }
+  .text {
+    position: absolute;
+    left: 15%
+
+  }
+}
